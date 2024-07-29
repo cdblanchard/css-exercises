@@ -27,3 +27,52 @@ body {
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
 }
+
+/* Solution */
+body {
+  display: flex;
+  flex-direction: column;
+}
+.header {
+  display: flex;
+  align-items: center;
+  font-size: 32px;
+  font-weight: 900;
+  padding-left: 16px;
+}
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main {
+  display: flex;
+  flex: 1;
+}
+.sidebar {
+  flex-shrink: 0;
+  padding: 16px;
+}
+.sidebar ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+.sidebar li {
+  margin-bottom: 16px;
+}
+.sidebar a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 24px;
+}
+.card-container {
+  padding: 48px;
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+.card {
+  width: 300px;
+  padding: 16px;
+}
